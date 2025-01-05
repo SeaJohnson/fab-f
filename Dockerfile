@@ -3,15 +3,12 @@ FROM node:16
 
 # 设置工作目录
 WORKDIR /app
-# 复制package.json和package-lock.json到工作目录
-COPY package*.json ./
-# 安装npm依赖
-RUN npm install
+
 # 复制项目的其他文件到工作目录
 COPY . .
 
 # 暴露应用程序的端口，假设应用程序运行在3000端口
-EXPOSE 3000
+# EXPOSE 3000
 # 容器启动时区
 ENV TZ=Asia/Shanghai
 
