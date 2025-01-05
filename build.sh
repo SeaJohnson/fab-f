@@ -98,10 +98,6 @@ GIT_AUTHOR_EMAIL
 The configured Git author email, if any, that will be used for FUTURE commits from the current workspace. It is read from the Global Config user.email Value field of the Jenkins Configure System page.
 '
 
-node -v
-npm cache clean --force
-npm i
-NODE_OPTIONS=--max-old-space-size=8192 npm run build:prod
 
 # 构建docker容器，上传到镜像仓库
 app_name='fab-app-f'  # 应用名称
