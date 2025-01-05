@@ -11,7 +11,8 @@
   "author": "zhangzhiwei",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development RUN_ENV=dev webpack serve -c scripts/webpack.dev.js"
+    "dev": "cross-env NODE_ENV=development RUN_ENV=dev webpack serve -c scripts/webpack.dev.js",
+    "buld:prod": "cross-env NODE_ENV=production RUN_ENV=prod webpack serve -c scripts/webpack.prod.js"
   },
   "browserslist": [
     "> 1%",
