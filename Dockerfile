@@ -11,7 +11,7 @@ RUN npm i
 
 COPY . /app
 
-RUN npm run build:prod
+# RUN npm run build:prod
 
 # 容器启动时区
 ENV TZ=Asia/Shanghai

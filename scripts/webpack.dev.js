@@ -15,7 +15,7 @@ module.exports = merge(base, {
   mode: "development", // 开发模式
   devServer: {
     open: false, // 编译完自动打开浏览器
-    port: 3000, // 端口号
+    port: 9003, // 端口号
     hot: true, // 开启热更新
     compress: false, // gzip 压缩, 开发环境不开启，提升速度
     historyApiFallback: true, // 避免 history 路由下刷新页面出现 404
